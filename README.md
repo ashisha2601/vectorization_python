@@ -9,4 +9,10 @@ BENEFITS:
 
 - Less Prone to Errors: By avoiding explicit loops, there is less room for errors related to indexing and other common loop-related issues.
 
-It can be achieved using Pandas and Numpy.
+It can be achieved using Pandas and Numpy. This results in significantly faster execution.
+
+COMPARISION BETWEEN LOOP BASED VERSION AND VECTORIZED VERSION:
+
+- LOOP BASED VERSION: The loop-based version iterates over each element, performing multiplication one element at a time. This introduces overhead due to the repeated loop operations and function calls (append).
+
+ VECTORIZED VERSION: The vectorized version performs the multiplication on the entire array at once, leveraging NumPy's highly optimized internal routines. 
